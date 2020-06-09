@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 
-main() => runApp(MyApp());
+main() => runApp(Center(
+  child:   Padding(
+    padding: const EdgeInsets.all(8.0),
+    child:   MyApp(),
+  ),
+));
 
 class MyApp extends StatelessWidget {
   @override
@@ -52,13 +57,8 @@ class MyHomePage extends StatelessWidget {
           Text("row11", style: TextStyle(fontSize: 30)),
           Text("row12", style: TextStyle(fontSize: 30)),
           Text("row13", style: TextStyle(fontSize: 30)),
-          Column(
-            mainAxisSize: MainAxisSize.min,
-            children: <Widget>[
-              Text("col1", style: TextStyle(fontSize: 30)),
-              Text("col2", style: TextStyle(fontSize: 30)),
-            ],
-          )
+          Text("col1", style: TextStyle(fontSize: 30)),
+          Text("col2", style: TextStyle(fontSize: 30))
         ],
       );
   }
