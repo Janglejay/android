@@ -56,8 +56,8 @@ class MyHomePageState extends State<MyHomePage>{
   void _increament() {
     _count++;
     _location = _count % 2 == 0 ?
-        FloatingActionButtonLocation.endFloat :
-        FloatingActionButtonLocation.centerFloat;
+    FloatingActionButtonLocation.endFloat :
+    FloatingActionButtonLocation.centerFloat;
     setState(() {});
   }
 }
